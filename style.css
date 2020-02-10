@@ -18,3 +18,41 @@ h3{
 	margin-top: 9.375rem;
 }
 
+#Top{
+	border:2px solid #a1a1a1;
+	background:#5DC7E8;
+	border-radius:25px;
+	margin-top: 4.375rem;
+}
+
+.jittery {
+  animation: jittery 4s infinite;
+}
+
+@keyframes jittery {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.50);
+  }
+  20% {
+    transform: scale(1.50) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.50) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.50) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.50) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.50) rotate(0);
+  }
+}
