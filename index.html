@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>民眾對於自動駕駛車的理解調查</title>
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body>
+		
+		<div class="navbar-fixed">
+			<ul id="dropdown1" class="dropdown-content">
+			  <li><a href="#Q1">一</a></li>
+			  <li class="divider"></li>
+			  <li><a href="#Q2">二</a></li>
+			  <li class="divider"></li>
+			  <li><a href="#Q3">三</a></li>
+			  <li class="divider"></li>
+			  <li><a href="#Q4">四</a></li>
+			  <li class="divider"></li>
+			  <li><a href="#Q5">五</a></li>
+			  <li class="divider"></li>
+			  <li><a href="#Q6">六</a></li>
+			  <li class="divider"></li>
+			  <li><a href="#Q7">七</a></li>
+			</ul>
+		  <nav>
+		    <div class="nav-wrapper">
+		      <ul id="nav-mobile" class="left hide-on-med-and-down">
+		        <li><a href="#Introduction">介紹</a></li>
+		        <li><a href="#">最後的最後</a></li>
+		        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">問題<i class="material-icons right">arrow_drop_down</i></a></li>
+		      </ul>
+		    </div>
+
+		  </nav>
+
+		</div>
+		
+		
+		
+		<div align="center">
+			<h1>民眾對於自動駕駛車<img class="responsive-img" width="100" src="images/car.svg" data-aos="fade-left">的理解調查</h1>
+			<h4 style="display:inline">樣本總數:<pre class="round-log">0</pre></h4>
+		</div>
+	
+		<div class="container">
+			<article id="Introduction">
+				<h5 class="question">你對自駕車了解多少<span data-aos="fade-down" data-aos-delay="1500">?</span></h5>
+				<p>人工智慧在近年蓬勃發展，也逐漸進入現代人的日常生活中，有越來越多的人開始對於此技術的發展感到好奇，但大部分的人並未因此去研究關於這項技術發展下所造成的社會問題，例如：特斯拉電動休旅車的自動輔助駕駛技術、Google自動駕駛車的自動駕駛技術在使用過程中造成意外事故的案件，這兩起事故引起了我們對於自動駕駛技術所適用法規及各個國家因應制度的好奇。
+				</p>
+				<p>此網站由小論文衍生出，目的在於互動性地展現出資料以吸引大眾對自駕車的注意。</p>
+			</article>
+		</div>
+		
+		<br id="Q1"><br><br>
+		
+		<div   class="container row">
+			<h3 class="question">1.請問您駕駛車輛時曾使用過自適應巡航系統或相關功能嗎?</h3>
+			<div class="col s6">
+				<canvas id="Chart1" width="400" height="200"></canvas>
+			</div>
+			<div class="col s6">
+				<p>您可以點擊上方標籤來排除資料。</p>
+			</div>
+		</div>
+		
+		<br id="Q2"><br><br>
+		
+		<div  class="container row">
+			<h3 class="question">2.請問自動輔助駕駛系統是否有運用到自適應巡航系統?</h3>
+			<div class="col s6">
+				<canvas id="Chart2" width="400" height="200"></canvas>
+			</div>
+			<div class="col s6">
+				<p>您可以點擊上方標籤來排除資料。</p>
+			</div>
+		</div>
+		
+		<br id="Q3"><br><br>
+		
+		<div  class="container row " data-aos="fade-up"  data-aos-duration="1000">
+			<h3 class="question">3.請問在使用自動輔助駕駛時可以將手離開方向盤嗎?</h3>
+			<div class="col s6">
+				<canvas id="Chart3" width="400" height="200"></canvas>
+			</div>
+			<div class="col s6">
+				<p>您可以點擊上方標籤來排除資料。</p>
+			</div>
+		</div>
+		
+		<br id="Q4"><br><br>
+		
+		<div class="container row" data-aos="fade-up"  data-aos-duration="1000">
+			<h3 class="question">4.請問您是否知道現行法律對於自動輔助駕駛車輛相關法律規範?</h3>
+			<div class="col s6">
+				<canvas id="Chart4" width="400" height="200"></canvas>
+			</div>
+			<div class="col s6">
+				<p>您可以點擊上方標籤來排除資料。</p>
+			</div>
+		</div>
+		
+		<br id="Q5"><br><br>
+		
+		<div  class="container row" data-aos="fade-up"  data-aos-duration="1000">
+			<h3 class="question">5.請問您認為如果開啟自動輔助駕駛時，發生車禍對於責任歸屬的認定會有多大的影響?</h3>
+			<div class="col s6">
+				<canvas id="Chart5" width="400" height="200"></canvas>
+			</div>
+			<div class="col s6">
+				<p>您可以點擊上方標籤來排除資料。</p>
+			</div>
+		</div>
+		
+		<br id="Q6"><br><br>
+		
+		<div class="container row" data-aos="fade-up"  data-aos-duration="1000">
+			<h3 class="question">6.請問自動輔助駕車輛的上路會對於您的交通安全造成負面影響嗎?</h3>
+			<div class="col s6">
+				<canvas id="Chart6" width="400" height="200"></canvas>
+			</div>
+			<div class="col s6">
+				<p>您可以點擊上方標籤來排除資料。</p>
+			</div>
+		</div>
+		
+		<br id="Q7"><br><br>
+		
+		<div class="container row" data-aos="fade-up"  data-aos-duration="1000">
+			<h3 class="question">7.請問您在開始駕駛車輛之前會檢查煞車是否正常嗎?</h3>
+			<div class="col s6">
+				<canvas id="Chart7" width="400" height="200"></canvas>
+			</div>
+			<div class="col s6">
+				<p>您可以點擊上方標籤來排除資料。</p>
+			</div>
+		</div>
+		
+		<br><br><br>
+		
+	    <footer class="page-footer" data-aos="fade-up"  data-aos-duration="1000">
+	          <div class="container">
+	            <div class="row">
+	              <div class="col l6 s12">
+	                <h5 class="white-text">页脚内容</h5>
+	                <p class="grey-text text-lighten-4">你可以用行和列来组织你的页脚内容。</p>
+	              </div>
+	              <div class="col l4 offset-l2 s12">
+	                <h5 class="white-text">链接</h5>
+	                <ul>
+	                  <li><a class="grey-text text-lighten-3" href="#!">链接 1</a></li>
+	                  <li><a class="grey-text text-lighten-3" href="#!">链接 2</a></li>
+	                  <li><a class="grey-text text-lighten-3" href="#!">链接 3</a></li>
+	                  <li><a class="grey-text text-lighten-3" href="#!">链接 4</a></li>
+	                </ul>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="footer-copyright">
+	            <div class="container">
+	            Made by ZHANG,HAO-WEI © 2020 Copyright
+	            </div>
+	          </div>
+	    </footer>
+	</body>
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	AOS.init();
+
+	var roundLogEl = document.querySelector('.round-log');
+	
+	anime({
+	  targets: roundLogEl,
+	  innerHTML: [0, 112],
+	  easing: 'linear',
+	  round: 10 ,// Will round the animated value to 1 decimal
+	  delay: 800,
+	});
+	
+	var ctx = document.getElementById("Chart1").getContext('2d');
+	var myChart = new Chart(ctx, {
+		type: 'pie',
+		data: {
+			labels: ["有", "沒有", "有這個功能但沒使用過", "無法理解問題"],
+			datasets: [{
+				label: '# of Votes',
+				data: [10.7, 78.6, 7.1, 3.6],
+				backgroundColor: [
+					'rgba(255, 99, 132, 1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)'
+				],
+				borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)'
+				],
+				borderWidth: 1
+			}]
+		},
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero:true
+					}
+				}]
+			}
+		}
+	});
+	var ctx = document.getElementById("Chart2").getContext('2d');
+	var myChart = new Chart(ctx, {
+		type: 'pie',
+		data: {
+			labels: ["有", "沒有", "無法理解問題或不知道"],
+			datasets: [{
+				label: '# of Votes',
+				data: [35.7, 35.7, 28.1],
+				backgroundColor: [
+					'rgba(255, 99, 132, 1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)'
+				],
+				borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)'
+				],
+				borderWidth: 1
+			}]
+		},
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero:true
+					}
+				}]
+			}
+		}
+	});
+	var ctx = document.getElementById("Chart3").getContext('2d');
+	var myChart = new Chart(ctx, {
+		type: 'pie',
+		data: {
+			labels: ["可以", "不可以"],
+			datasets: [{
+				label: '# of Votes',
+				data: [57.1, 42.9],
+				backgroundColor: [
+					'rgba(255, 99, 132, 1)',
+					'rgba(54, 162, 235, 1)'
+				],
+				borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)'
+				],
+				borderWidth: 1
+			}]
+		},
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero:true
+					}
+				}]
+			}
+		}
+	});
+	var ctx = document.getElementById("Chart4").getContext('2d');
+	var myChart = new Chart(ctx, {
+		type: 'pie',
+		data: {
+			labels: ["是", "否"],
+			datasets: [{
+				label: '# of Votes',
+				data: [78.6, 21.4],
+				backgroundColor: [
+					'rgba(255, 99, 132, 1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)'
+				],
+				borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)'
+				],
+				borderWidth: 1
+			}]
+		},
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero:true
+					}
+				}]
+			}
+		}
+	});
+	var ctx = document.getElementById("Chart5").getContext('2d');
+	var myChart = new Chart(ctx, {
+		type: 'pie',
+		data: {
+			labels: ["影響大","適當影響", "沒有影響或些許影響"],
+			datasets: [{
+				label: '# of Votes',
+				data: [42.9, 39.3,17.9],
+				backgroundColor: [
+					'rgba(255, 99, 132, 1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)'
+				],
+				borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)'
+				],
+				borderWidth: 1
+			}]
+		},
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero:true
+					}
+				}]
+			}
+		}
+	});
+	var ctx = document.getElementById("Chart6").getContext('2d');
+	var myChart = new Chart(ctx, {
+		type: 'pie',
+		data: {
+			labels: ["會", "不會"],
+			datasets: [{
+				label: '# of Votes',
+				data: [57.1, 42.9],
+				backgroundColor: [
+					'rgba(255, 99, 132, 1)',
+					'rgba(54, 162, 235, 1)'
+				],
+				borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)'
+				],
+				borderWidth: 1
+			}]
+		},
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero:true
+					}
+				}]
+			}
+		}
+	});
+	var ctx = document.getElementById("Chart7").getContext('2d');
+	var myChart = new Chart(ctx, {
+		type: 'pie',
+		data: {
+			labels: ["會", "不會"],
+			datasets: [{
+				label: '# of Votes',
+				data: [60.7, 39.3],
+				backgroundColor: [
+					'rgba(255, 99, 132, 1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)'
+				],
+				borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)'
+				],
+				borderWidth: 1
+			}]
+		},
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero:true
+					}
+				}]
+			}
+		}
+	});
+	</script>
+</html>
