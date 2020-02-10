@@ -43,11 +43,14 @@
 		
 		
 		
-		<div align="center">
+		<div id="Top" align="center">
 			<h1>民眾對於自動駕駛車<img class="responsive-img" width="100" src="images/car.svg" data-aos="fade-left">的理解調查</h1>
-			<h4 style="display:inline">樣本總數:<pre class="round-log">0</pre></h4>
 		</div>
-	
+		<br><br>
+		<div class="center-align">
+			<img class="responsive-img"  src="images/white-mercedes-benz-cars-120049.jpg">
+		</div>
+		
 		<div class="container">
 			<article id="Introduction">
 				<h5 class="question">你對自駕車了解多少<span data-aos="fade-down" data-aos-delay="1500">?</span></h5>
@@ -57,9 +60,15 @@
 			</article>
 		</div>
 		
+		<br><br><br>
+		
+		<div class="center-align wow">
+			<h4 style="display:inline">樣本總數:<pre class="round-log">0</pre></h4>
+		</div>
+		
 		<br id="Q1"><br><br>
 		
-		<div   class="container row">
+		<div   class="container row" data-aos="fade-up"  data-aos-duration="1000">
 			<h3 class="question">1.請問您駕駛車輛時曾使用過自適應巡航系統或相關功能嗎?</h3>
 			<div class="col s6">
 				<canvas id="Chart1" width="400" height="200"></canvas>
@@ -71,7 +80,7 @@
 		
 		<br id="Q2"><br><br>
 		
-		<div  class="container row">
+		<div  class="container row" data-aos="fade-up"  data-aos-duration="1000">
 			<h3 class="question">2.請問自動輔助駕駛系統是否有運用到自適應巡航系統?</h3>
 			<div class="col s6">
 				<canvas id="Chart2" width="400" height="200"></canvas>
@@ -173,18 +182,28 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script>
 	AOS.init();
 
-	var roundLogEl = document.querySelector('.round-log');
+
+	var wow = new WOW(
+	  {
+	    callback:     function(box) {
+	      	var roundLogEl = document.querySelector('.round-log');
 	
-	anime({
-	  targets: roundLogEl,
-	  innerHTML: [0, 112],
-	  easing: 'linear',
-	  round: 10 ,// Will round the animated value to 1 decimal
-	  delay: 800,
-	});
+			anime({
+			  targets: roundLogEl,
+			  innerHTML: [0, 112],
+			  easing: 'linear',
+			  round: 10 ,// Will round the animated value to 1 decimal
+			  delay: 800,
+			});
+	    },
+	    scrollContainer: null // 可以設定成只套用在某個container中捲動才呈現, 不設定就是整個視窗
+	  }
+	);
+	wow.init();
 	
 	var ctx = document.getElementById("Chart1").getContext('2d');
 	var myChart = new Chart(ctx, {

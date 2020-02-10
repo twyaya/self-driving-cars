@@ -2,6 +2,10 @@ body{
 	background-color: #e7eff5;
 }
 
+p{
+	font-size: 1.375rem;
+}
+
 .round-log{
 	display:inline;
 }
