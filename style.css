@@ -1,10 +1,21 @@
+
 body{
+	font-family: 'Noto Sans TC', sans-serif;
 	background-color: #e7eff5;
-	font-family:"Microsoft Yahei";
 }
+
 
 p{
 	font-size: 1.375rem;
+}
+
+#Introduction{
+	color: white;
+	padding: 2.1875rem;
+}
+
+.link{
+	color: rgb(74, 238, 205);
 }
 
 .round-log{
@@ -16,7 +27,7 @@ h3{
 }
 
 #in{
-	border-color: rgb(166, 122, 68) transparent rgb(166, 122, 68) transparent;
+	border-color: rgb(255, 250, 212) transparent rgb(255, 250, 212) transparent;
 	border-width:2px;
 	border-style:solid;
 }
