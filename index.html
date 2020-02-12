@@ -37,11 +37,67 @@
 		        <li><a href="#End">最後的最後</a></li>
 		        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">問題<i class="material-icons right">arrow_drop_down</i></a></li>
 		      </ul>
+			  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 		    </div>
-
+			
 		  </nav>
-
+		        
 		</div>
+		
+		<ul id="slide-out" class="side-nav grey">
+				<li>
+					<div class="userView">
+						<div class="background">
+							<img src="https://www.crazyppt.com/wp-content/uploads/2018/10/1-1PH1120331.jpg">
+						</div>
+						<a href="#!name"><span class="name">張皓偉</span></a>
+						<a href="#!email"><span class="email">otis8496@gmail.com</span></a>
+					</div>
+				</li>
+				<li><a href="#Introduction">介紹</a></li>
+				<li><a href="#End">最後的最後</a></li>
+				      <li class="no-padding">
+				        <ul class="collapsible collapsible-accordion">
+				          <li>
+				            <a class="collapsible-header">問題<i class="material-icons">arrow_drop_down</i></a>
+				            <div class="collapsible-body">
+				              <ul>
+								  <li><a href="#Q1">使用者</a></li>
+								  <li class="divider"></li>
+								  <li><a href="#Q2">運用</a></li>
+								  <li class="divider"></li>
+								  <li><a href="#Q3">基本常識</a></li>
+								  <li class="divider"></li>
+								  <li><a href="#Q4">相關規範</a></li>
+								  <li class="divider"></li>
+								  <li><a href="#Q5">責任歸屬</a></li>
+								  <li class="divider"></li>
+								  <li><a href="#Q6">影響</a></li>
+								  <li class="divider"></li>
+								  <li><a href="#Q7">檢查煞車</a></li>
+				              </ul>
+				            </div>
+				          </li>
+				        </ul>
+				      </li>
+				<li>
+					  <div class="divider"></div>
+				</li>
+				<li><a class="subheader center">Learn More About Me</a></li>
+				<div class="row">
+					<div class="col s6">
+						<h5>
+							<a href="https://www.facebook.com/zhanghaowei0" class="grey-text text-darken-3" target="_blank"><img src="https://img.icons8.com/dusk/64/000000/facebook-new--v2.png"></a>
+						</h5>
+					</div>
+					<div class="col s6">
+						<h5>
+							<a href="https://github.com/twyaya" class="grey-text text-darken-3" target="_blank"><img src="https://img.icons8.com/dusk/64/000000/github.png"></a>
+						</h5>
+					</div>
+				</div>
+		</ul>
+		
 		
 		
 		<div id="Top" class="container" align="center" data-aos="fade-up">
@@ -200,7 +256,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 		<script>
 		AOS.init();
-		
+		$(".button-collapse").sideNav();
 		
 		var wow = new WOW(
 		  {
