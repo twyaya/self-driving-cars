@@ -40,8 +40,10 @@ h3{
 #Top{
 	border:2px solid #a1a1a1;
 	background-image: url(images/cars-parked-in-front-of-company-building-2449452.jpg);
-	border-radius:25px;
-	margin-top: 4.375rem;
+	border-radius:15px;
+	margin-top: 8.5rem;
+	margin-bottom: 7.5rem;
+	padding: 6.25rem;
 	background-size:cover;
 }
 
