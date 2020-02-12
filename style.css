@@ -9,6 +9,7 @@ p{
 	font-size: 1.375rem;
 }
 
+
 #Introduction{
 	color: white;
 	padding: 2.1875rem;
@@ -38,9 +39,14 @@ h3{
 
 #Top{
 	border:2px solid #a1a1a1;
-	background:#5DC7E8;
+	background-image: url(images/cars-parked-in-front-of-company-building-2449452.jpg);
 	border-radius:25px;
 	margin-top: 4.375rem;
+	background-size:cover;
+}
+
+#title{
+	background-color: rgba(166, 186, 188, 0.4);
 }
 
 .jittery {
