@@ -211,9 +211,15 @@
 			</div>
 		</div>
 		
-		<br id="Q7"><br><br>
+		<br id="Q7"><br><br> 		
 		
-		<div class="container row" data-aos="fade-up"  data-aos-duration="1000">
+		<audio>
+		        <source src="mp3/Ambulance_Drive_Siren.mp3"></source>
+		</audio>
+		
+		<div class="container row wow2" data-aos="fade-up"  data-aos-duration="1000">
+
+			
 			<h3 class="question">7.請問您在開始駕駛車輛之前會檢查煞車是否正常嗎?</h3>
 			<div class="col s12 m6">
 				<canvas id="Chart7" ></canvas>
@@ -225,7 +231,7 @@
 		
 		<br><br><br>
 		
-	    <footer class="page-footer" data-aos="fade-up"  data-aos-duration="1000">
+	    <footer class="page-footer">
 	          <div class="container">
 	            <div class="row">
 	              <div class="col l6 s12">
@@ -256,250 +262,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-		<script>
-		AOS.init();
-		$(".button-collapse").sideNav();
-		
-		var wow = new WOW(
-		  {
-		    callback:     function(box) {
-		      	var roundLogEl = document.querySelector('.round-log');
-		
-				anime({
-				  targets: roundLogEl,
-				  innerHTML: [0, 112],
-				  easing: 'linear',
-				  round: 10 ,// Will round the animated value to 1 decimal
-				  delay: 800,
-				});
-		    },
-		    scrollContainer: null // 可以設定成只套用在某個container中捲動才呈現, 不設定就是整個視窗
-		  }
-		);
-		wow.init();
-		
-		var ctx = document.getElementById("Chart1").getContext('2d');
-		var myChart = new Chart(ctx, {
-			type: 'pie',
-			data: {
-				labels: ["有", "沒有", "有這個功能但沒使用過", "無法理解問題"],
-				datasets: [{
-					label: '# of Votes',
-					data: [10.7, 78.6, 7.1, 3.6],
-					backgroundColor: [
-						'rgba(255, 99, 132, 1)',
-						'rgba(54, 162, 235, 1)',
-						'rgba(255, 206, 86, 1)',
-						'rgba(75, 192, 192, 1)'
-					],
-					borderColor: [
-						'rgba(255,99,132,1)',
-						'rgba(54, 162, 235, 1)',
-						'rgba(255, 206, 86, 1)',
-						'rgba(75, 192, 192, 1)'
-					],
-					borderWidth: 1
-				}]
-			},
-			options: {
-				scales: {
-					yAxes: [{
-						ticks: {
-							beginAtZero:true
-						}
-					}]
-				}
-			}
-		});
-		var ctx = document.getElementById("Chart2").getContext('2d');
-		var myChart = new Chart(ctx, {
-			type: 'pie',
-			data: {
-				labels: ["有", "沒有", "無法理解問題或不知道"],
-				datasets: [{
-					label: '# of Votes',
-					data: [35.7, 35.7, 28.1],
-					backgroundColor: [
-						'rgba(255, 99, 132, 1)',
-						'rgba(54, 162, 235, 1)',
-						'rgba(255, 206, 86, 1)'
-					],
-					borderColor: [
-						'rgba(255,99,132,1)',
-						'rgba(54, 162, 235, 1)',
-						'rgba(255, 206, 86, 1)'
-					],
-					borderWidth: 1
-				}]
-			},
-			options: {
-				scales: {
-					yAxes: [{
-						ticks: {
-							beginAtZero:true
-						}
-					}]
-				}
-			}
-		});
-		var ctx = document.getElementById("Chart3").getContext('2d');
-		var myChart = new Chart(ctx, {
-			type: 'pie',
-			data: {
-				labels: ["可以", "不可以"],
-				datasets: [{
-					label: '# of Votes',
-					data: [57.1, 42.9],
-					backgroundColor: [
-						'rgba(255, 99, 132, 1)',
-						'rgba(54, 162, 235, 1)'
-					],
-					borderColor: [
-						'rgba(255,99,132,1)',
-						'rgba(54, 162, 235, 1)'
-					],
-					borderWidth: 1
-				}]
-			},
-			options: {
-				scales: {
-					yAxes: [{
-						ticks: {
-							beginAtZero:true
-						}
-					}]
-				}
-			}
-		});
-		var ctx = document.getElementById("Chart4").getContext('2d');
-		var myChart = new Chart(ctx, {
-			type: 'pie',
-			data: {
-				labels: ["是", "否"],
-				datasets: [{
-					label: '# of Votes',
-					data: [21.4, 78.6],
-					backgroundColor: [
-						'rgba(255, 99, 132, 1)',
-						'rgba(54, 162, 235, 1)'
-					],
-					borderColor: [
-						'rgba(255,99,132,1)',
-						'rgba(54, 162, 235, 1)'
-					],
-					borderWidth: 1
-				}]
-			},
-			options: {
-				scales: {
-					yAxes: [{
-						ticks: {
-							beginAtZero:true
-						}
-					}]
-				}
-			}
-		});
-		var ctx = document.getElementById("Chart5").getContext('2d');
-		var myChart = new Chart(ctx, {
-			type: 'pie',
-			data: {
-				labels: ["影響大","適當影響", "沒有影響或些許影響"],
-				datasets: [{
-					label: '# of Votes',
-					data: [42.9, 39.3,17.9],
-					backgroundColor: [
-						'rgba(255, 99, 132, 1)',
-						'rgba(54, 162, 235, 1)',
-						'rgba(255, 206, 86, 1)'
-					],
-					borderColor: [
-						'rgba(255,99,132,1)',
-						'rgba(54, 162, 235, 1)',
-						'rgba(255, 206, 86, 1)'
-					],
-					borderWidth: 1
-				}]
-			},
-			options: {
-				scales: {
-					yAxes: [{
-						ticks: {
-							beginAtZero:true
-						}
-					}]
-				}
-			}
-		});
-		var ctx = document.getElementById("Chart6").getContext('2d');
-		var myChart = new Chart(ctx, {
-			type: 'pie',
-			data: {
-				labels: ["會", "不會"],
-				datasets: [{
-					label: '# of Votes',
-					data: [57.1, 42.9],
-					backgroundColor: [
-						'rgba(255, 99, 132, 1)',
-						'rgba(54, 162, 235, 1)'
-					],
-					borderColor: [
-						'rgba(255,99,132,1)',
-						'rgba(54, 162, 235, 1)'
-					],
-					borderWidth: 1
-				}]
-			},
-			options: {
-				scales: {
-					yAxes: [{
-						ticks: {
-							beginAtZero:true
-						}
-					}]
-				}
-			}
-		});
-		var ctx = document.getElementById("Chart7").getContext('2d');
-		var myChart = new Chart(ctx, {
-			type: 'pie',
-			data: {
-				labels: ["會", "不會"],
-				datasets: [{
-					label: '# of Votes',
-					data: [60.7, 39.3],
-					backgroundColor: [
-						'rgba(255, 99, 132, 1)',
-						'rgba(54, 162, 235, 1)',
-						'rgba(255, 206, 86, 1)'
-					],
-					borderColor: [
-						'rgba(255,99,132,1)',
-						'rgba(54, 162, 235, 1)',
-						'rgba(255, 206, 86, 1)'
-					],
-					borderWidth: 1
-				}]
-			},
-			options: {
-				scales: {
-					yAxes: [{
-						ticks: {
-							beginAtZero:true
-						}
-					}]
-				}
-			}
-		});
-		
-		$(document).ready(function(){
-		  $("#more").click(function(){
-		    $("#in").toggle();
-		  });
-		  $("#in").hide();
-		});
-		
-		</script>
+		<script src="index.js"></script>
 	</body>
 
 </html>
