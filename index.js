@@ -22,18 +22,6 @@
 		
 		wow.init();
 		
-		var wow2 = new WOW(
-		  {
-			boxClass:     'wow2',
-		    callback:     function(box) {
-				var audio = $("audio")[1];
-				audio.play();
-		    },
-		    scrollContainer: null 
-		  }
-		);
-		
-		wow2.init();
 		
 		var ctx = document.getElementById("Chart1").getContext('2d');
 		var myChart = new Chart(ctx, {
