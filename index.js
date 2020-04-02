@@ -1,8 +1,16 @@
+
+		var options = {
+		  strings: ['請別忘記身在科技發展的海嘯中，有許多問題不容忽視。'],
+		  typeSpeed: 40
+		};
+
+		var typed = new Typed('#type-text', options);
+		typed.stop();
+
 		AOS.init();
 		$(".button-collapse").sideNav();
 		
-
-		var wow = new WOW(
+		var wow1 = new WOW(
 		  {
 			boxClass:     'wow',
 		    callback:     function(box) {
@@ -20,7 +28,18 @@
 		  }
 		);
 		
-		wow.init();
+		var wow2 = new WOW(
+		  {
+			boxClass:     'wow2',
+		    callback:     function(box) {
+				typed.start();
+		    },
+		    scrollContainer: null 
+		  }
+		);
+		
+		wow1.init();
+		wow2.init();
 		
 		
 		var ctx = document.getElementById("Chart1").getContext('2d');
