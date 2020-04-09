@@ -10,6 +10,7 @@
 		AOS.init();
 		$(".button-collapse").sideNav();
 		
+		
 		var wow1 = new WOW(
 		  {
 			boxClass:     'wow',
@@ -256,9 +257,35 @@
 			}
 		});
 		
+		var active = false;
+		
 		$(document).ready(function(){
 		  $("#more").click(function(){
 		    $("#in").toggle();
+			
+			if (!active) {
+				anime({
+				  targets: '#more',
+				  rotate: {
+					value: 180,
+					duration: 200,
+					easing: 'easeInOutSine'
+				  },
+				});
+				active = true;
+			}
+			else{
+				anime({
+				  targets: '#more',
+				  rotate: {
+					value: 360,
+					duration: 200,
+					easing: 'easeInOutSine'
+				  },
+				});
+				active = false
+			}
+			
 		  });
 		  $("#in").hide();
 		});
